@@ -1,0 +1,12 @@
+.header__exit {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    .header__exit {
+        display: none;
+    }
+}

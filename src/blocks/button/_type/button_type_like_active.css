@@ -1,0 +1,15 @@
+.button_type_like_active {
+    background-image: url('./../../../images/like-black.svg');
+    width: 20.76px;
+    height: 18.13px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 17.24px;
+    cursor: pointer;
+    transition: 0.25s linear;
+    justify-self: end;
+    border: 0;
+    outline: none;
+    background-color: white;
+}

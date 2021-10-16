@@ -1,0 +1,5 @@
+.error-popup__images {
+  background: url('../../../../images/imageErrorPopup.png') no-repeat center;
+  width: 120px;
+  height: 120px;
+}

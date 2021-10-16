@@ -1,0 +1,11 @@
+.header__burger {
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   transition: all 0.25s linear;
+   
+}

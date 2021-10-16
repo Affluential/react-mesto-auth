@@ -1,0 +1,4 @@
+.button_type_disabled {
+  background: gray;
+  cursor: default;
+}

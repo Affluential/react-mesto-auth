@@ -1,0 +1,10 @@
+.user-data {
+  margin-right: 24px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .user-data {
+    margin: 0 0 18px 0;
+  }
+}

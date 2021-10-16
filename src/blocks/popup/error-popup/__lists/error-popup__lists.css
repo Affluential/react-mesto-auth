@@ -1,0 +1,31 @@
+.error-popup__lists {
+    /* width: 430px;
+    height: 330px; */
+    padding:60px 37px 60px 37px;
+    background-color: white;
+    list-style: none;
+    margin: 0;
+    
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+@media screen and (max-width: 450px) {
+    .error-popup__lists{
+            
+        padding:60px 40px 60px 30px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .error-popup__lists{
+       
+        
+        padding:58px 18px 50px 18px;
+    }
+}

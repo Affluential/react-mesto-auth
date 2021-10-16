@@ -1,0 +1,18 @@
+.register__container {
+    max-width:430px;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    position: relative;
+    padding: 36px 36px 36px 36px;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+@media screen and (max-width:500px) {
+    .register__container {
+        padding: 30px 30px 30px 30px;
+    }
+}
+
+

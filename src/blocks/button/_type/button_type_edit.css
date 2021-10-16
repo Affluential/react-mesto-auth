@@ -1,0 +1,33 @@
+.button_type_edit {
+    background-image: url('./../../../images/Edit-Button.svg');
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 0 8px 17px;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: 0.25s linear;
+    border:0;
+    background-color: black;
+    outline: none;
+    padding: 0;
+    
+}
+
+.button_type_edit:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 689px) {
+    .button_type_edit {
+        margin: 0 0 12px 14px;
+        box-sizing: border-box;  
+}}
+
+@media screen and (max-width: 457px) {
+    .button_type_edit {
+        width: 18px;
+        height: 18px;
+        margin: 0 0 6px 9px;
+}}

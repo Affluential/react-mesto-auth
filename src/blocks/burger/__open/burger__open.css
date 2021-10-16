@@ -1,0 +1,19 @@
+.burger__open {
+    visibility: hidden;
+    opacity: 0;
+    
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .burger__open {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.25s linear;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 142px;
+    }
+}
+

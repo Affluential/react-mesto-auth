@@ -1,0 +1,11 @@
+
+@media screen and (max-width: 500px) {
+    .button_type_error {
+        position: absolute;
+        top: -57px;
+        right: 45%;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+    }
+}

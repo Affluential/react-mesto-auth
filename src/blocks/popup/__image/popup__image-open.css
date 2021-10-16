@@ -1,0 +1,5 @@
+.popup__image-open {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s, visibility 0s ease;
+}

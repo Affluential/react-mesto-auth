@@ -1,0 +1,22 @@
+.register__input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 2px solid #CCCCCC;
+    padding:0;
+    height: 42.08px;
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 20px;
+    outline: none;
+    background-color: black;
+    
+}
+
+@media screen and (max-width: 500px) {
+    .register__input {
+        font-size: 12px;
+        height: 29.08px;
+    }
+}
