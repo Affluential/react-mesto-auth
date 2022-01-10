@@ -81,7 +81,7 @@ function App() {
     api
       .changeAvatar(avatar)
       .then((newAvatar) => {
-        setCurrentUser(newAvatar);
+        setCurrentUser(newAvatar.data);
       })
       .catch((err) => {
         console.log(`Ошибка:${err}`);
@@ -97,7 +97,7 @@ function App() {
     api
       .setUserInfo(userInfo)
       .then((user) => {
-        setCurrentUser(user);
+        setCurrentUser(user.data);
       })
       .catch((err) => {
         console.log(`Ошибка:${err}`);
@@ -119,11 +119,11 @@ function App() {
   }
 
   function handleCardLike(card) {
-    const isLiked = card.likes.some((i) => i._id === currentUser._id);
+    const isLiked = card.likes.some((i) => i === currentUser._id);
     api
       .changeLikeCardStatus(card._id, !isLiked)
       .then((newCard) => {
-        const newCards = cards.map((c) => (c._id === card._id ? newCard : c));
+        const newCards = cards.map((c) => (c._id === card._id ? newCard.data : c));
         setCards(newCards);
       })
       .catch((err) => {
@@ -211,27 +211,12 @@ function App() {
       .getContent()
       .then((res) => {
         if (res) {
-          setUserEmail(res.data.email);
+          setUserEmail(res.email);
           history.push('/main');
           hendleLogin();
         }
       })
       .catch((err) => console.log(err));
-    /*  if (localStorage.getItem('token')) {
-      const token = localStorage.getItem('token');
-      if (token) {
-        mainAuth
-          .getContent(token)
-          .then((res) => {
-            if (res) {
-              setUserEmail(res.data.email);
-              history.push('/main');
-              hendleLogin();
-            }
-          })
-          .catch((err) => console.log(err));
-      }
-    } */
   }, [loggedIn, history]);
   return (
     <CurrentUserContext.Provider value={currentUser}>

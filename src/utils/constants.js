@@ -3,6 +3,5 @@ export const apiConfig = {
   headers: {
     /* authorization: 'd842ff54-d107-474c-9b49-51f3c32bc27b', */
     'Content-Type': 'application/json',
-    credentials: 'include',
   },
 };

@@ -20,7 +20,7 @@ function Register({ openPopupDone, openPopupError }) {
       .register(dataUser.password, dataUser.email)
       .then((res) => {
         console.log(res);
-        if (res) {
+        if (res.status === 200) {
           openPopupDone();
           history.push('/sign-in');
         } else {

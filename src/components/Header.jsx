@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from './../images/logo.svg';
 import { Link, useHistory, useLocation } from 'react-router-dom';
+import Api from '../utils/Api';
 
 function Header({ userEmail, setLogged, setUserEmail, setBurgerHidden }) {
   const location = useLocation();
@@ -9,7 +10,7 @@ function Header({ userEmail, setLogged, setUserEmail, setBurgerHidden }) {
   const [toggle, setToggle] = useState(true);
 
   function signOut() {
-    localStorage.removeItem('token');
+    Api.logout();
     history.push('/sign-up');
     setLogged(false);
     setUserEmail('');
